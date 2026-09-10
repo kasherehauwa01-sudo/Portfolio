@@ -30,6 +30,7 @@ npm run preview
 - `src/data/skills.ts`: категории навыков.
 - `src/styles/global.css`: цвета, типографика и адаптивность.
 - `index.html`: title, description и Open Graph.
+- `src/assets/portrait.webp`: фото первого экрана. Замените файл своим WebP; Vite автоматически соберет корректный путь для GitHub Pages. Компактная шапка и адаптация портрета оформлены в `src/styles/hero.css`.
 
 ## Добавление проекта
 

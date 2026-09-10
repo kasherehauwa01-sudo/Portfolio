@@ -1,23 +1,27 @@
+import portrait from "../assets/portrait.webp";
+import { profile } from "../data/profile";
+import "../styles/hero.css";
 export function Hero() {
   return (
-    <section className="hero container" id="home">
-      <div className="eyebrow">
-        <span className="live-dot" /> AI-разработчик · Автоматизация бизнеса
-      </div>
-      <h1>
-        Превращаю
-        <br />
-        бизнес-задачи
-        <br />в <span>работающие</span>
-        <br />
-        <span>цифровые сервисы.</span>
-      </h1>
-      <div className="hero-bottom">
-        <div>
+    <section className="hero hero-compact container" id="home">
+      <div className="hero-grid">
+        <div className="hero-copy">
+          <div className="eyebrow">
+            <span className="live-dot" /> AI-разработчик · Vibe Coder
+          </div>
+          <h1>
+            Бизнес-задачи
+            <br />
+            превращаю в{" "}
+            <span>
+              работающие
+              <br className="hero-break" /> цифровые сервисы.
+            </span>
+          </h1>
           <p className="hero-description">
-            Создаю веб-приложения, системы учета и инструменты автоматизации с
-            помощью AI. От идеи и проектирования логики до работающего сервиса
-            на сервере.
+            Создаю веб-приложения и инструменты автоматизации с помощью AI. От
+            понимания процесса и проектирования логики до работающего сервиса на
+            сервере.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#projects">
@@ -27,31 +31,34 @@ export function Hero() {
               Обо мне <span aria-hidden="true">↓</span>
             </a>
           </div>
-        </div>
-        <div className="hero-aside">
-          <span className="mini-label">ОТ ЗАДАЧИ К РЕЗУЛЬТАТУ</span>
-          <div className="path-line">
-            <span>Идея</span>
-            <i /> <span>Логика</span>
-            <i />
-            <b>Сервис ↗</b>
-          </div>
-          <p>
-            AI помогает писать код.
-            <br />Я отвечаю за то, как работает решение.
+          <p className="hero-principle">
+            AI помогает писать код. Я отвечаю за решение.
           </p>
         </div>
+        <figure className="hero-portrait">
+          <img
+            src={portrait}
+            alt={profile.name ? `Портрет: ${profile.name}` : "Автор портфолио"}
+            width="1441"
+            height="1920"
+            fetchPriority="high"
+            decoding="async"
+          />
+          <figcaption>
+            <span>{profile.name || "От идеи до запуска"}</span>
+            <span>Логика. Разработка. Результат.</span>
+          </figcaption>
+        </figure>
       </div>
-      <div className="disciplines">
+      <div className="disciplines" aria-label="Направления работы">
         {[
-          "AI-разработка",
           "Автоматизация бизнеса",
           "Внутренние веб-сервисы",
           "PWA",
           "Работа с данными",
-          "Интеграции",
-        ].map((x) => (
-          <span key={x}>{x}</span>
+          "API и интеграции",
+        ].map((item) => (
+          <span key={item}>{item}</span>
         ))}
       </div>
     </section>
