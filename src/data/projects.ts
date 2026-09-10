@@ -24,7 +24,16 @@ export const projects: Project[] = [
     ],
     technologies: ["XML", "Товарные данные", "Подбор аналогов"],
     url: "https://kvasmix.ru/vr/catalog/",
-    image: "catalog.webp",
+    image: "catalog-overview.jpg",
+    images: [
+      "catalog-overview.jpg",
+      "catalog-product.jpg",
+      "catalog-analogs.jpg",
+      "catalog-mappings.jpg",
+      "catalog-scenarios.jpg",
+      "catalog-analog-settings.jpg",
+      "catalog-settings.jpg",
+    ],
     status: "Внутренний сервис",
   },
   {
