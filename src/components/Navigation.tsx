@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { profile } from "../data/profile";
 const links = [
   ["home", "Главная"],
   ["about", "Обо мне"],
@@ -20,15 +19,6 @@ export function Navigation() {
   return (
     <header className="header">
       <div className="nav-wrap">
-        <a className="brand" href="#home" aria-label="На главную">
-          <span className="brand-mark" aria-hidden="true">
-            ↗
-          </span>
-          <span>
-            {profile.name || "Практика"}
-            <small>AI-разработка</small>
-          </span>
-        </a>
         <button
           className="menu-toggle"
           aria-expanded={open}

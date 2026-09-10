@@ -1,8 +1,8 @@
 export const profile = {
   name: "",
   email: "",
-  telegram: "",
-  phone: "",
+  telegram: "@kvas_mix",
+  phone: "+79954191752",
   github: "",
   role: "AI-разработчик · Vibe Coder",
   about:

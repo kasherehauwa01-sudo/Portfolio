@@ -5,7 +5,7 @@ export function About() {
       <div>
         <div className="eyebrow">02 / Обо мне</div>
         <h2>
-          Понимаю процесс.
+          Погружаюсь в процесс.
           <br />
           Проектирую решение.
           <br />

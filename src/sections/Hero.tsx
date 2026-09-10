@@ -31,9 +31,6 @@ export function Hero() {
               Обо мне <span aria-hidden="true">↓</span>
             </a>
           </div>
-          <p className="hero-principle">
-            AI помогает писать код. Я отвечаю за решение.
-          </p>
         </div>
         <figure className="hero-portrait">
           <img
