@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Project } from "../types/project";
+import { ProjectGallery } from "./ProjectGallery";
 const screenshots = import.meta.glob("/public/projects/*.{webp,png,jpg}", {
   eager: true,
   query: "?url",
@@ -13,20 +14,35 @@ export function ProjectCard({
   index: number;
 }) {
   const [failed, setFailed] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const galleryImages = [...new Set([p.image, ...(p.images ?? [])])]
+    .filter((name) => `/public/projects/${name}` in screenshots)
+    .map((name) => `${import.meta.env.BASE_URL}projects/${name}`);
   const hasImage = `/public/projects/${p.image}` in screenshots;
   return (
     <article className={`project-card project-${p.id}`}>
       <div className="project-art">
         {hasImage && !failed ? (
-          <img
-            src={`${import.meta.env.BASE_URL}projects/${p.image}`}
-            alt={`Публичный интерфейс: ${p.title}`}
-            loading="lazy"
-            decoding="async"
-            width="1200"
-            height="750"
-            onError={() => setFailed(true)}
-          />
+          <button
+            className="project-preview"
+            onClick={() => setGalleryOpen(true)}
+            aria-label={`Открыть галерею проекта ${p.title}`}
+            aria-haspopup="dialog"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}projects/${p.image}`}
+              alt={`Публичный интерфейс: ${p.title}`}
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="750"
+              onError={() => setFailed(true)}
+            />
+            <span className="preview-hint">
+              Увеличить ↗
+              {galleryImages.length > 1 && ` · ${galleryImages.length} фото`}
+            </span>
+          </button>
         ) : (
           <div
             className="project-cover"
@@ -72,6 +88,12 @@ export function ProjectCard({
             <p>{p.problem}</p>
             <h4>Решение</h4>
             <p>{p.solution}</p>
+            {p.details?.map((section) => (
+              <div key={section.title}>
+                <h4>{section.title}</h4>
+                <p>{section.text}</p>
+              </div>
+            ))}
             <h4>Возможности</h4>
             <ul>
               {p.features.map((x) => (
@@ -97,6 +119,13 @@ export function ProjectCard({
           Открыть сервис <span aria-hidden="true">↗</span>
         </a>
       </div>
+      {galleryOpen && galleryImages.length > 0 && (
+        <ProjectGallery
+          title={p.title}
+          images={galleryImages}
+          onClose={() => setGalleryOpen(false)}
+        />
+      )}
     </article>
   );
 }
