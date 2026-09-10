@@ -11,6 +11,9 @@ export interface Project {
   technologies: string[];
   category: string;
   image: string;
+  /** Файлы из public/projects в порядке показа; image используется по умолчанию. */
+  images?: string[];
   status: string;
   note?: string;
+  details?: { title: string; text: string }[];
 }
