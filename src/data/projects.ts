@@ -240,7 +240,17 @@ export const projects: Project[] = [
     ],
     technologies: ["PWA", "Календарь", "Задачи и заметки"],
     url: "https://kvasmix.ru/key3in/",
-    image: "key3in.webp",
+    image: "key3in-month.jpg",
+    images: [
+      "key3in-month.jpg",
+      "key3in-agenda.jpg",
+      "key3in-note.jpg",
+      "key3in-search.jpg",
+      "key3in-notifications.jpg",
+      "key3in-recurring-events.jpg",
+      "key3in-repeat-settings.jpg",
+      "key3in-settings.jpg",
+    ],
     status: "PWA-приложение",
   },
 ];
