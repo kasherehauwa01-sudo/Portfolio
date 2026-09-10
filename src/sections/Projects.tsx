@@ -12,17 +12,11 @@ export function Projects() {
       <div className="container">
         <div className="section-heading">
           <div>
-            <div className="eyebrow">01 / Практика</div>
+            <div className="eyebrow">01 / Мои проекты</div>
             <h2>
-              Задачи разные.
-              <br />
-              Результат — <span>работает.</span>
+              Сервисы, созданные для решения конкретных задач бизнеса.
             </h2>
           </div>
-          <p>
-            Реальные сервисы, выросшие из рабочих задач. Каждый можно открыть и
-            посмотреть. Внутренние инструменты могут требовать входа.
-          </p>
         </div>
         <div className="filters" role="group" aria-label="Категории проектов">
           {categories.map((c) => (
