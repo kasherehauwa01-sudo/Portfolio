@@ -109,7 +109,16 @@ export const projects: Project[] = [
     ],
     technologies: ["Android", "Серверный API", "Веб-аналитика"],
     url: "https://kvasmix.ru/vr/analizmop/",
-    image: "analizmop.webp",
+    image: "analizmop-dashboard.jpg",
+    images: [
+      "analizmop-dashboard.jpg",
+      "analizmop-client-calls.jpg",
+      "analizmop-settings.jpg",
+      "analizmop-users.jpg",
+      "analizmop-email.jpg",
+      "analizmop-mailbox.jpg",
+      "analizmop-updates.jpg",
+    ],
     status: "Требуется вход",
     details: [
       {
