@@ -169,7 +169,17 @@ export const projects: Project[] = [
     ],
     technologies: ["Финансовый учет", "Excel", "Обработка документов"],
     url: "https://kvasmix.ru/vr/finomir/",
-    image: "finomir.webp",
+    image: "finomir-dashboard.jpg",
+    images: [
+      "finomir-dashboard.jpg",
+      "finomir-expenses.jpg",
+      "finomir-expense-detail.jpg",
+      "finomir-invoice-recognition.jpg",
+      "finomir-directories.jpg",
+      "finomir-scenarios.jpg",
+      "finomir-smtp.jpg",
+      "finomir-recognition-fallback.jpg",
+    ],
     status: "В развитии",
   },
   {
