@@ -69,7 +69,15 @@ export const projects: Project[] = [
     ],
     technologies: ["Excel", "Импорт / экспорт", "Автоматизация"],
     url: "https://kvasmix.ru/vr/sroki_godnosti/",
-    image: "sroki.webp",
+    image: "sroki-registry.jpg",
+    images: [
+      "sroki-registry.jpg",
+      "sroki-events.jpg",
+      "sroki-notifications.jpg",
+      "sroki-history.jpg",
+      "sroki-notification-settings.jpg",
+      "sroki-warehouses.jpg",
+    ],
     status: "Внутренний сервис",
   },
   {
