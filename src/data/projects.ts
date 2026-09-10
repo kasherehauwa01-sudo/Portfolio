@@ -29,6 +29,7 @@ export const projects: Project[] = [
       "catalog-overview.jpg",
       "catalog-product.jpg",
       "catalog-analogs.jpg",
+      "catalog-filters.jpg",
       "catalog-mappings.jpg",
       "catalog-scenarios.jpg",
       "catalog-analog-settings.jpg",
