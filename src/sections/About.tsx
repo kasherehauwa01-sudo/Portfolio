@@ -24,15 +24,6 @@ export function About() {
           ошибки, доработать логику, развернуть сервис и развивать его на
           основании реального использования.
         </p>
-        <div className="signature">
-          <span className="brand-mark" aria-hidden="true">
-            ↗
-          </span>
-          <div>
-            {profile.name || "От бизнес-задачи до приложения"}
-            <small>{profile.role}</small>
-          </div>
-        </div>
       </div>
       <div className="results">
         <div>

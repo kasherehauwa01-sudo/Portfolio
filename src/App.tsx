@@ -1,4 +1,5 @@
 import { Navigation } from "./components/Navigation";
+import { MessengerLinks } from "./components/MessengerLinks";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { About } from "./sections/About";
@@ -22,6 +23,7 @@ export default function App() {
       </main>
       <footer className="container footer">
         <span>Создано с AI. Продумано человеком.</span>
+        <MessengerLinks />
         <a href="#home">Вернуться наверх ↑</a>
       </footer>
     </>
