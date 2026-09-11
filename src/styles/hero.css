@@ -209,5 +209,5 @@
   }
 }
 /* Навигация без логотипа: пункты справа, меню удобно доступно на мобильном. */
-.header .nav-wrap { justify-content:flex-end; }
+.header .nav-wrap { justify-content:space-between; }
 .projects-section .section-heading h2 { max-width:950px; }

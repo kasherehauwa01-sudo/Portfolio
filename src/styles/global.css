@@ -1302,3 +1302,10 @@ h2 {
   .header-phone { font-size: 12px; }
   .header-contacts { gap: 3px; }
 }
+.messenger-links { display: flex; align-items: center; gap: 6px; }
+.max-icon { width: 21px; height: 21px; background: currentColor; mask-size: contain; mask-repeat: no-repeat; mask-position: center; }
+.header .navigation a:last-child { border: 0; border-radius: 0; padding: 12px 0; }
+.header .navigation { top: 100%; }
+.footer .messenger-link { padding: 0; }
+@media (max-width: 900px) { .header .navigation a:last-child { padding: 13px 10px; } }
+@media (max-width: 380px) { .header-contacts { flex-wrap: wrap; } }
