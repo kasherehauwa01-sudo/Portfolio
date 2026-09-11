@@ -48,6 +48,10 @@ export function Navigation() {
               {label}
             </a>
           ))}
+          <div className="mobile-menu-contacts">
+            <MessengerLinks />
+            <a className="header-phone" href={`tel:${profile.phone}`}>{profile.phone}</a>
+          </div>
         </nav>
       </div>
     </header>

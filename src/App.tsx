@@ -1,5 +1,6 @@
 import { Navigation } from "./components/Navigation";
 import { MessengerLinks } from "./components/MessengerLinks";
+import { profile } from "./data/profile";
 import { Hero } from "./sections/Hero";
 import { Projects } from "./sections/Projects";
 import { About } from "./sections/About";
@@ -23,7 +24,10 @@ export default function App() {
       </main>
       <footer className="container footer">
         <span>Создано с AI. Продумано человеком.</span>
-        <MessengerLinks />
+        <div className="footer-contacts">
+          <MessengerLinks />
+          <a className="header-phone" href={`tel:${profile.phone}`}>{profile.phone}</a>
+        </div>
         <a href="#home">Вернуться наверх ↑</a>
       </footer>
     </>
