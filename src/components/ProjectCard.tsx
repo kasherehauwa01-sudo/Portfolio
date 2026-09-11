@@ -109,7 +109,7 @@ export function ProjectCard({
             {p.note && <p className="case-note">{p.note}</p>}
           </div>
         </details>
-        <a
+        {p.url && <a
           className="service-link"
           href={p.url}
           target="_blank"
@@ -117,7 +117,7 @@ export function ProjectCard({
           aria-label={`Открыть сервис ${p.title} в новой вкладке`}
         >
           Открыть сервис <span aria-hidden="true">↗</span>
-        </a>
+        </a>}
       </div>
       {galleryOpen && galleryImages.length > 0 && (
         <ProjectGallery
