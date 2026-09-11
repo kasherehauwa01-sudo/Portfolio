@@ -6,9 +6,6 @@ export function Hero() {
     <section className="hero hero-compact container" id="home">
       <div className="hero-grid">
         <div className="hero-copy">
-          <div className="eyebrow">
-            <span className="live-dot" /> AI-разработчик · Vibe Coder
-          </div>
           <h1>
             Бизнес-задачи
             <br />
