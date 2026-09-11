@@ -1309,3 +1309,19 @@ h2 {
 .footer .messenger-link { padding: 0; }
 @media (max-width: 900px) { .header .navigation a:last-child { padding: 13px 10px; } }
 @media (max-width: 380px) { .header-contacts { flex-wrap: wrap; } }
+
+.footer-contacts { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.mobile-menu-contacts { display: none; }
+@media (max-width: 900px) {
+  .header .nav-wrap { min-height: 64px; }
+  .header-profile { padding: 8px 0; gap: 0; }
+  .header-profile > .header-contacts { display: none; }
+  .header-identity { gap: 3px; }
+  .header-identity span { font-size: 15px; }
+  .header-identity strong { font-size: 10px; }
+  .header .menu-toggle { padding: 8px 10px; font-size: 12px; }
+  .header .navigation { max-height: calc(100dvh - 64px); overflow-y: auto; }
+  .mobile-menu-contacts { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; padding-top: 12px; margin-top: 8px; border-top: 1px solid var(--line); }
+  .header .navigation .messenger-link { padding: 0; border: 1px solid var(--line); border-radius: 50%; }
+  html { scroll-padding-top: 80px; }
+}
