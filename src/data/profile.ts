@@ -1,5 +1,6 @@
 export const profile = {
-  name: "",
+  name: "Василий Коляев",
+  max: "https://max.ru/u/f9LHodD0cOLCBBykayLB-e649oSMg0ja612vC2PdmXX3aHmEcOO1FuXZu74",
   email: "",
   telegram: "@kvas_mix",
   phone: "+79954191752",

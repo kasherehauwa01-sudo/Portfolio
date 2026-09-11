@@ -1274,3 +1274,31 @@ h2 {
     gap: 10px;
   }
 }
+
+/* Контакты автора в шапке */
+.header-profile { display: flex; align-items: center; gap: 20px; min-width: 0; }
+.header-identity { display: grid; gap: 4px; white-space: nowrap; }
+.header-identity span { font-size: 16px; font-weight: 650; }
+.header-identity strong { font-size: 11px; font-weight: 600; color: var(--muted); }
+.header-contacts { display: flex; align-items: center; gap: 6px; }
+.messenger-link { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--green); }
+.messenger-link svg { width: 21px; height: 21px; }
+.messenger-link:hover { background: #e3efd7; }
+.header-phone { white-space: nowrap; font-size: 13px; padding: 12px 4px; }
+@media (max-width: 1200px) {
+  .header-profile { align-items: flex-start; flex-direction: column; gap: 4px; padding: 12px 0; }
+  .nav-wrap { gap: 16px; }
+  .navigation { gap: 16px; }
+}
+@media (max-width: 900px) {
+  .menu-toggle { display: block; min-height: 44px; padding: 10px 13px; background: transparent; border: 1px solid var(--line); border-radius: 6px; white-space: nowrap; }
+  .navigation { display: none; position: absolute; top: 100%; left: 0; right: 0; padding: 18px; background: #f6f6f0; border-bottom: 1px solid var(--line); }
+  .navigation.open { display: flex; flex-direction: column; align-items: stretch; gap: 1px; }
+  .navigation a, .navigation a:last-child { padding: 13px 10px; border: 0; }
+  html { scroll-padding-top: 140px; }
+}
+@media (max-width: 380px) {
+  .nav-wrap { width: calc(100% - 24px); gap: 8px; }
+  .header-phone { font-size: 12px; }
+  .header-contacts { gap: 3px; }
+}
