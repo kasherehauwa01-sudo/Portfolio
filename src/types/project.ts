@@ -7,7 +7,8 @@ export interface Project {
   solution: string;
   benefits: string[];
   features: string[];
-  url: string;
+  /** Если адрес не указан, ссылка на сервис не отображается. */
+  url?: string;
   technologies: string[];
   category: string;
   image: string;

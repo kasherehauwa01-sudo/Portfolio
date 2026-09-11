@@ -23,7 +23,6 @@ export const projects: Project[] = [
       "Поиск похожих позиций с процентом совпадения",
     ],
     technologies: ["XML", "Товарные данные", "Подбор аналогов"],
-    url: "https://kvasmix.ru/vr/catalog/",
     image: "catalog-overview.jpg",
     images: [
       "catalog-overview.jpg",
@@ -68,7 +67,6 @@ export const projects: Project[] = [
       "Журналирование отправок, изменений и действий системы",
     ],
     technologies: ["Excel", "Импорт / экспорт", "Автоматизация"],
-    url: "https://kvasmix.ru/vr/sroki_godnosti/",
     image: "sroki-registry.jpg",
     images: [
       "sroki-registry.jpg",
@@ -108,7 +106,6 @@ export const projects: Project[] = [
       "Персональные учётные записи и разграничение доступа",
     ],
     technologies: ["Android", "Серверный API", "Веб-аналитика"],
-    url: "https://kvasmix.ru/vr/analizmop/",
     image: "analizmop-dashboard.jpg",
     images: [
       "analizmop-dashboard.jpg",
@@ -118,6 +115,11 @@ export const projects: Project[] = [
       "analizmop-email.jpg",
       "analizmop-mailbox.jpg",
       "analizmop-updates.jpg",
+      "analizmop-android-dialer.jpg",
+      "analizmop-android-history.jpg",
+      "analizmop-android-dashboard.jpg",
+      "analizmop-android-notifications.jpg",
+      "analizmop-android-contact.jpg",
     ],
     status: "Требуется вход",
     details: [
@@ -168,7 +170,6 @@ export const projects: Project[] = [
       "Дашборд с ключевыми финансовыми показателями",
     ],
     technologies: ["Финансовый учет", "Excel", "Обработка документов"],
-    url: "https://kvasmix.ru/vr/finomir/",
     image: "finomir-dashboard.jpg",
     images: [
       "finomir-dashboard.jpg",
@@ -184,7 +185,7 @@ export const projects: Project[] = [
   },
   {
     id: "shramko",
-    title: "Shramko",
+    title: "Рацион Shamko",
     subtitle: "Интерактивный план питания на 21 день.",
     category: "Личные инструменты",
     description:
@@ -239,7 +240,6 @@ export const projects: Project[] = [
       "Адаптивный интерфейс для смартфонов и компьютеров",
     ],
     technologies: ["PWA", "Календарь", "Задачи и заметки"],
-    url: "https://kvasmix.ru/key3in/",
     image: "key3in-month.jpg",
     images: [
       "key3in-month.jpg",
